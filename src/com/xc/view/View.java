@@ -2,12 +2,6 @@ package com.xc.view;
 
 import com.xc.DAO.TeacherServiceDAO;
 import com.xc.Service.TeacherService;
-import com.xc.util.SqlHelper;
-import javafx.scene.chart.ScatterChart;
-
-import java.sql.*;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -34,12 +28,33 @@ public class View {
                 case "2":
                     showHomework();
                     break;
+                case "3":
+                    findHomework();
+                    break;
+                case "4":
+                    deleteHomework();
+                    break;
                 case "0":
                     System.exit(0);
                 default:
                     System.out.println("输入的参数有误");
             }
         }
+    }
+
+    private void deleteHomework() {
+        System.out.println("输入你想要删除的Id");
+        String id = scanner.nextLine();
+        ts.deleteHomework(id);
+    }
+
+    private void findHomework() {
+        System.out.println("输入课程名");
+        String course = scanner.nextLine();
+        System.out.println("输入章节名");
+        String chapter = scanner.nextLine();
+
+        ts.findHomework(course, chapter);
     }
 
     private void addHomework() {
@@ -50,5 +65,32 @@ public class View {
 
         ArrayList<String> arr = ts.showCurrentHomework();
         System.out.println(arr);
+        boolean flag = true;
+        while (flag) {
+            System.out.println("1查看详细信息 2编辑作业 0退出");
+            String option = scanner.nextLine();
+            switch (option) {
+                case "1":
+                    System.out.println("输入查看的作业id，0退出");
+                    String id = scanner.nextLine();
+                    if (id.equals("0"))
+                        break;
+                    arr = ts.showHomeworkDetails(id);
+                    System.out.println(arr);
+                    break;
+                case "2":
+                    System.out.println("输入编辑的作业id，0退出");
+                    id = scanner.nextLine();
+                    if (id.equals("0"))
+                        break;
+                    ts.editHomework(id);
+                    break;
+                case "0":
+                    flag = false;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

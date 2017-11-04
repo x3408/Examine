@@ -8,7 +8,7 @@ public interface TeacherServiceDAO {
 
     boolean addNewHomework();
 
-    boolean editHomework();
+    boolean editHomework(String id);
 
     ArrayList<String> showCurrentHomework();
 
