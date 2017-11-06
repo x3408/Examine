@@ -7,17 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc24637-9368-4ea9-9ce9-339acae9d6b5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/xc/DAO/StudentServiceDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/xc/Service/StudentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/DAO/TeacherServiceDAO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/DAO/TeacherServiceDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/Junit/unit.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/Junit/unit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/Service/TeacherService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/Service/TeacherService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/view/View.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/view/View.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/xc/DAO/TeacherServiceDAO.java" afterPath="$PROJECT_DIR$/src/com/xc/DAO/TeacherServiceDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/xc/Junit/unit.java" afterPath="$PROJECT_DIR$/src/com/xc/Junit/unit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/xc/Service/TeacherService.java" afterPath="$PROJECT_DIR$/src/com/xc/Service/TeacherService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/xc/view/View.java" afterPath="$PROJECT_DIR$/src/com/xc/view/View.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -608,7 +598,7 @@
       <workItem from="1509807664657" duration="163000" />
       <workItem from="1509808002507" duration="1544000" />
       <workItem from="1509883310768" duration="5887000" />
-      <workItem from="1509965022417" duration="11938000" />
+      <workItem from="1509965022417" duration="12051000" />
     </task>
     <task id="LOCAL-00001" summary="源代码">
       <created>1509776710865</created>
@@ -617,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509776710865</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="源代码">
+      <created>1509977094650</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1509977094650</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -653,7 +650,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51176000" />
+    <option name="totallyTimeSpent" value="51289000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
