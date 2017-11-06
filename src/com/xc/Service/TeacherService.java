@@ -2,6 +2,7 @@ package com.xc.Service;
 
 import com.xc.DAO.TeacherServiceDAO;
 import com.xc.util.SqlHelper;
+import org.omg.CORBA.INTERNAL;
 
 import java.sql.*;
 import java.text.ParseException;
@@ -50,6 +51,8 @@ public class TeacherService implements TeacherServiceDAO {
 
     @Override
     public boolean addNewHomework() {
+        int content_id = 0;
+        int homework_id = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入新添加的作业标题，说明，评分项。并以=分开，评分项请用逗号");
         String str = scanner.nextLine();
@@ -78,27 +81,17 @@ public class TeacherService implements TeacherServiceDAO {
             } else {
                 throw new RuntimeException("插入失败，结束本次添加");
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            SqlHelper.free(conn, ps);
-        }
+            sql = "select LAST_INSERT_ID()";
 
 
-        sql = "select LAST_INSERT_ID()";
-        int content_id = 0;
-        rs = SqlHelper.executeStringQuery(sql, null);
-        try {
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
             if (rs.next())
                 content_id = Integer.parseInt(rs.getString(1));
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                rs.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            SqlHelper.free(conn, ps, rs);
         }
 
         System.out.println("请依次输入班级id，显示时间，提交时间，用=分开");
@@ -154,6 +147,37 @@ public class TeacherService implements TeacherServiceDAO {
             } else {
                 throw new RuntimeException("插入失败，结束本次添加");
             }
+
+            sql = "select LAST_INSERT_ID()";
+
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+            if (rs.next())
+                homework_id = Integer.parseInt(rs.getString(1));
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            SqlHelper.free(conn, ps, rs);
+        }
+
+        sql = "select student_id from student";
+        conn = SqlHelper.getInstance().getConnection();
+        try {
+            ArrayList<Integer> nums = new ArrayList<>();
+            ps = conn.prepareStatement(sql);
+            rs = ps.executeQuery();
+
+            for(int i=1;rs.next();i++) {
+                nums.add(rs.getInt(1));
+            }
+            sql = "INSERT INTO sbhm(id, student_id) values(?,?)";
+
+            for (int i = 0; i < nums.size(); i++) {
+                ps = conn.prepareStatement(sql);
+                ps.setInt(1,homework_id);
+                ps.setInt(2, nums.get(i));
+                ps.executeUpdate();
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -203,12 +227,13 @@ public class TeacherService implements TeacherServiceDAO {
 
     @Override
     public boolean deleteHomework(String id) {
-        String sql = "DELETE TABLE FROM homework where id = ?";
+        String sql = "DELETE FROM homework where id = ?";
         Connection conn = SqlHelper.getInstance().getConnection();
         PreparedStatement ps = null;
         try {
             ps = conn.prepareStatement(sql);
             ps.setInt(1, Integer.parseInt(id));
+            ps.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -273,6 +298,117 @@ public class TeacherService implements TeacherServiceDAO {
             while (rs.next()) {
                 for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
                     arr.add(rs.getString(i + 1));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            SqlHelper.free(conn, ps, rs);
+        }
+        return arr;
+    }
+
+    @Override
+    public boolean remarkHomework(String id, String student_id, String score, String remark) {
+        String sql = "UPDATE sbhm SET score=?,remark=? where id=? and student_id=?";
+        Connection conn = SqlHelper.getInstance().getConnection();
+        PreparedStatement ps = null;
+        try {
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, Integer.parseInt(score));
+            ps.setString(2, remark);
+            ps.setInt(3, Integer.parseInt(id));
+            ps.setInt(4, Integer.parseInt(student_id));
+
+            int i = ps.executeUpdate();
+            if(i == 1){
+                System.out.println("批改作业成功");
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            SqlHelper.free(conn, ps);
+        }
+        return false;
+    }
+
+    @Override
+    public ArrayList<String> showSubmitHomework(String id) {
+        ArrayList<String> arr = new ArrayList<>();
+        String sql = "SELECT student.dept,class.class_name,student.name,student.grade,stime,score \n" +
+                "from sbhm \n" +
+                "INNER JOIN student ON\n" +
+                "student.student_id = sbhm.student_id\n" +
+                "INNER JOIN class ON\n" +
+                "student.class_id = class.class_id\n" +
+                "where id = ?";
+
+        Connection conn = SqlHelper.getInstance().getConnection();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        try {
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, Integer.parseInt(id));
+
+            rs = ps.executeQuery();
+            while(rs.next()) {
+                for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
+                    arr.add(rs.getString(i+1));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            SqlHelper.free(conn, ps, rs);
+        }
+        return arr;
+    }
+
+    @Override
+    public ArrayList<String> showSubmitHomeworkDetail(String id, String student_id) {
+        ArrayList<String> arr = new ArrayList<>();
+        String sql = "select course.course_name,chapter.chapter_name,content.content_title,\n" +
+                "content.content_illustrate,content.scope_id\n" +
+                "from homework\n" +
+                "INNER JOIN course ON\n" +
+                "course.course_id=homework.course_id\n" +
+                "INNER JOIN chapter ON\n" +
+                "chapter.chapter_id=homework.chapter_id\n" +
+                "INNER JOIN content ON\n" +
+                "homework.content_id=content.content_id\n" +
+                "where homework.id = ?";
+        Connection conn = SqlHelper.getInstance().getConnection();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, Integer.parseInt(id));
+            rs = ps.executeQuery();
+
+            if(rs.next()) {
+                for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
+                    arr.add(rs.getString(i+1));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            SqlHelper.free(conn, ps);
+        }
+
+        sql = "SELECT sbhm.homeworkContent,sbhm.score from sbhm where student_id=? and sbhm.id=?";
+        conn = SqlHelper.getInstance().getConnection();
+        try {
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, Integer.parseInt(id));
+            ps.setInt(2, Integer.parseInt(student_id));
+
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
+                    arr.add(rs.getString(i+1));
                 }
             }
         } catch (SQLException e) {

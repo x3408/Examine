@@ -1,5 +1,6 @@
 package com.xc.Junit;
 
+import com.xc.Service.StudentService;
 import com.xc.Service.TeacherService;
 import com.xc.util.SqlHelper;
 import org.junit.Test;
@@ -12,12 +13,14 @@ import java.util.Scanner;
 public class unit {
     @Test
     public void c() {
-       ArrayList<String> arr = new TeacherService().findHomework("Java","第一章");
-        for (String str : arr) {
-            System.out.print(str + "  ");
-        }
+        ArrayList<String> arr = new StudentService("1").UnfinishedHomework();
+        System.out.println(arr);
     }
 
+    @Test
+    public void t() {
+        new TeacherService().addNewHomework();
+    }
     @Test
     public void stringTest() {
         Scanner scanner = new Scanner(System.in);

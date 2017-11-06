@@ -6,10 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecc24637-9368-4ea9-9ce9-339acae9d6b5" name="Default" comment="源代码">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="" />
+    <list default="true" id="ecc24637-9368-4ea9-9ce9-339acae9d6b5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/xc/DAO/StudentServiceDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/xc/Service/StudentService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/DAO/TeacherServiceDAO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/DAO/TeacherServiceDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/Junit/unit.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/Junit/unit.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/Service/TeacherService.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/Service/TeacherService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/view/View.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/xc/view/View.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/xc/DAO/TeacherServiceDAO.java" afterPath="$PROJECT_DIR$/src/com/xc/DAO/TeacherServiceDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/xc/Junit/unit.java" afterPath="$PROJECT_DIR$/src/com/xc/Junit/unit.java" />
@@ -25,7 +28,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/kaohe$View.coverage" NAME="View Coverage Results" MODIFIED="1509775555616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/kaohe$View.coverage" NAME="View Coverage Results" MODIFIED="1509883578275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.xc.view.*</FILTER>
     </SUITE>
   </component>
@@ -34,8 +37,8 @@
       <file leaf-file-name="SqlHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xc/util/SqlHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1944">
-              <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+            <state relative-caret-position="378">
+              <caret line="102" column="20" lean-forward="true" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,48 +50,94 @@
         <entry file="file://$PROJECT_DIR$/src/com/xc/Junit/unit.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/xc/Service/TeacherService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="121" column="35" lean-forward="false" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
+              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#editHomework#0;class#TeacherService#0" expanded="false" />
-                <element signature="method#showCurrentHomework#0;class#TeacherService#0" expanded="false" />
-                <element signature="method#deleteHomework#0;class#TeacherService#0" expanded="false" />
-                <element signature="method#showHomeworkDetails#0;class#TeacherService#0" expanded="false" />
-                <marker date="1509776699662" expanded="true" signature="512:1076" ph="SELECT homew... homework" />
-                <marker date="1509776699662" expanded="true" signature="2063:2295" ph="INSERT INTO content" />
-                <marker date="1509776699662" expanded="true" signature="2951:2974" ph="select LAST_... " />
-                <marker date="1509776699662" expanded="true" signature="3519:3598" ph="INSERT INTO scope2" />
-                <marker date="1509776699662" expanded="true" signature="4502:4844" ph="INSERT INTO\... homework" />
-                <marker date="1509776699662" expanded="true" signature="4654:4709" ph="SELECT cours... course" />
-                <marker date="1509776699662" expanded="true" signature="4735:4794" ph="SELECT chapt... chapter" />
-                <marker date="1509776699662" expanded="true" signature="7545:8239" ph="SELECT \nhom... homework" />
-                <marker date="1509776699662" expanded="true" signature="8948:9160" ph="select class... scope2" />
-                <marker date="1509776699662" expanded="true" signature="8948:9161" ph="select class... scope2" />
+                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xc/view/View.java">
+      <file leaf-file-name="TeacherService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xc/Service/TeacherService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+            <state relative-caret-position="480">
+              <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#findHomework#0;class#TeacherService#0" expanded="false" />
+                <element signature="method#addNewHomework#0;class#TeacherService#0" expanded="false" />
+                <element signature="method#editHomework#0;class#TeacherService#0" expanded="false" />
+                <element signature="method#showCurrentHomework#0;class#TeacherService#0" expanded="false" />
+                <element signature="method#deleteHomework#0;class#TeacherService#0" expanded="false" />
+                <element signature="method#showHomeworkDetails#0;class#TeacherService#0" expanded="false" />
+                <element signature="method#remarkHomework#0;class#TeacherService#0" expanded="false" />
+                <element signature="method#showSubmitHomework#0;class#TeacherService#0" expanded="false" />
+                <element signature="method#showSubmitHomeworkDetail#0;class#TeacherService#0" expanded="false" />
+                <marker date="1509973551430" expanded="true" signature="543:1107" ph="SELECT homew... homework" />
+                <marker date="1509973551430" expanded="true" signature="2151:2383" ph="INSERT INTO content" />
+                <marker date="1509973551430" expanded="true" signature="2905:2928" ph="select LAST_... " />
+                <marker date="1509973551430" expanded="true" signature="3366:3445" ph="INSERT INTO scope2" />
+                <marker date="1509973551430" expanded="true" signature="4349:4691" ph="INSERT INTO\... homework" />
+                <marker date="1509973551430" expanded="true" signature="4501:4556" ph="SELECT cours... course" />
+                <marker date="1509973551430" expanded="true" signature="4582:4641" ph="SELECT chapt... chapter" />
+                <marker date="1509973551430" expanded="true" signature="5199:5222" ph="select LAST_... " />
+                <marker date="1509973551430" expanded="true" signature="5555:5585" ph="select COUNT... student" />
+                <marker date="1509973551430" expanded="true" signature="5911:5943" ph="INSERT INTO sbhm... " />
+                <marker date="1509973551430" expanded="true" signature="5911:5955" ph="INSERT INTO sbhm... " />
+                <marker date="1509973551430" expanded="true" signature="7842:7875" ph="DELETE FROM " />
+                <marker date="1509973551430" expanded="true" signature="8434:9128" ph="SELECT \nhom... homework" />
+                <marker date="1509973551430" expanded="true" signature="9837:10049" ph="select class... scope2" />
+                <marker date="1509973551430" expanded="true" signature="9837:10050" ph="select class... scope2" />
+                <marker date="1509973551430" expanded="true" signature="10734:10794" ph="UPDATE sbhm " />
+                <marker date="1509973551430" expanded="true" signature="11619:11964" ph="SELECT stude... sbhm" />
+                <marker date="1509973551430" expanded="true" signature="12775:13301" ph="select cours... homework" />
+                <marker date="1509973551430" expanded="true" signature="13919:14000" ph="SELECT sbhm.... sbhm" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/xc/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1620">
+              <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#458#459#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="method#checkHomework#0;class#View#0" expanded="false" />
+                <element signature="method#updateHomework#0;class#View#0" expanded="false" />
+                <element signature="method#deleteHomework#0;class#View#0" expanded="false" />
                 <element signature="method#findHomework#0;class#View#0" expanded="false" />
-                <element signature="e#1593#1594#0" expanded="true" />
-                <element signature="e#1628#1629#0" expanded="true" />
+                <element signature="e#6085#6086#0" expanded="true" />
+                <element signature="e#6120#6121#0" expanded="true" />
+                <element signature="method#showHomework#0;class#View#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/xc/Service/StudentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="122" column="13" lean-forward="true" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+                <element signature="method#UnfinishedHomework#0;class#StudentService#0" expanded="false" />
+                <element signature="method#checkHomework#0;class#StudentService#0" expanded="false" />
+                <marker date="1509976700236" expanded="true" signature="507:1525" ph="SELECT\n\tho... homework" />
+                <marker date="1509976700236" expanded="true" signature="2292:3345" ph="SELECT\n\tho... homework" />
+                <marker date="1509976700236" expanded="true" signature="4083:4166" ph="UPDATE sbhm " />
+                <marker date="1509976700236" expanded="true" signature="4083:4167" ph="UPDATE sbhm " />
+                <marker date="1509976700236" expanded="true" signature="4940:5466" ph="select cours... homework" />
+                <marker date="1509976700236" expanded="true" signature="6028:6108" ph="SELECT sbhm.... sbhm" />
+                <marker date="1509976700236" expanded="true" signature="6028:6109" ph="SELECT sbhm.... sbhm" />
               </folding>
             </state>
           </provider>
@@ -97,9 +146,19 @@
       <file leaf-file-name="TeacherServiceDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xc/DAO/TeacherServiceDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="240">
+              <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+              <folding>
+                <element signature="docComment;method#findHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+                <element signature="docComment;method#addNewHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+                <element signature="docComment;method#editHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+                <element signature="docComment;method#showCurrentHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+                <element signature="docComment;method#deleteHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+                <element signature="docComment;method#showHomeworkDetails#0;class#TeacherServiceDAO#0" expanded="false" />
+                <element signature="docComment;method#remarkHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+                <element signature="docComment;method#showSubmitHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+                <element signature="docComment;method#showSubmitHomeworkDetail#0;class#TeacherServiceDAO#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +166,8 @@
       <file leaf-file-name="TeacherServiceServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xc/Servlet/TeacherServiceServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+            <state relative-caret-position="168">
+              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -130,6 +189,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -156,9 +216,11 @@
         <option value="$PROJECT_DIR$/src/com/xc/Servlet/TeacherServiceServlet.java" />
         <option value="$PROJECT_DIR$/src/com/xc/util/SqlHelper.java" />
         <option value="$PROJECT_DIR$/src/com/xc/DAO/TeacherServiceDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/xc/Junit/unit.java" />
-        <option value="$PROJECT_DIR$/src/com/xc/view/View.java" />
         <option value="$PROJECT_DIR$/src/com/xc/Service/TeacherService.java" />
+        <option value="$PROJECT_DIR$/src/com/xc/Junit/unit.java" />
+        <option value="$PROJECT_DIR$/src/com/xc/DAO/StudentServiceDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/xc/view/View.java" />
+        <option value="$PROJECT_DIR$/src/com/xc/Service/StudentService.java" />
       </list>
     </option>
   </component>
@@ -196,9 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,11 +265,39 @@
               <item name="kaohe" type="b2602c69:ProjectViewProjectNode" />
               <item name="kaohe" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="kaohe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kaohe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kaohe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kaohe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kaohe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kaohe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xc" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kaohe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kaohe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xc" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.unit.c">
+  <component name="RunManager" selected="Application.View">
     <configuration name="Tomcat 7.0.81" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.81" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
@@ -460,17 +547,44 @@
       <envs />
       <patterns />
     </configuration>
-    <list size="4">
+    <configuration name="unit.t" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.xc.Junit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="kaohe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.xc.Junit" />
+      <option name="MAIN_CLASS_NAME" value="com.xc.Junit.unit" />
+      <option name="METHOD_NAME" value="t" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0.81" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.unit.c" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.unit.stringTest" />
       <item index="3" class="java.lang.String" itemvalue="Application.View" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.unit.t" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.unit.c" />
-        <item index="1" class="java.lang.String" itemvalue="Application.View" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.unit.stringTest" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.View" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.unit.c" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.unit.t" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.unit.stringTest" />
       </list>
     </recent_temporary>
   </component>
@@ -490,27 +604,36 @@
       <workItem from="1509620465112" duration="11716000" />
       <workItem from="1509719439961" duration="824000" />
       <workItem from="1509771267315" duration="449000" />
-      <workItem from="1509771870772" duration="4825000" />
+      <workItem from="1509771870772" duration="4920000" />
+      <workItem from="1509807664657" duration="163000" />
+      <workItem from="1509808002507" duration="1544000" />
+      <workItem from="1509883310768" duration="5887000" />
+      <workItem from="1509965022417" duration="11938000" />
     </task>
+    <task id="LOCAL-00001" summary="源代码">
+      <created>1509776710865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1509776710865</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="unit_c - 2017.11.04 at 13h 43m 49s.xml">
+    <history-entry file="unit_c - 2017.11.06 at 19h 22m 50s.xml">
       <configuration name="unit.c" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unit_c - 2017.11.04 at 13h 45m 23s.xml">
+    <history-entry file="unit_c - 2017.11.06 at 19h 23m 37s.xml">
       <configuration name="unit.c" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unit_c - 2017.11.04 at 13h 49m 02s.xml">
+    <history-entry file="unit_c - 2017.11.06 at 19h 31m 25s.xml">
       <configuration name="unit.c" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unit_c - 2017.11.04 at 13h 49m 36s.xml">
+    <history-entry file="unit_c - 2017.11.06 at 19h 43m 49s.xml">
       <configuration name="unit.c" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="unit_c - 2017.11.04 at 13h 49m 41s.xml">
-      <configuration name="unit.c" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="unit_c - 2017.11.04 at 14h 18m 11s.xml">
+    <history-entry file="unit_c - 2017.11.06 at 21h 08m 55s.xml">
       <configuration name="unit.c" configurationId="JUnit" />
     </history-entry>
     <history-entry file="unit_stringTest - 2017.11.02 at 17h 26m 15s.xml">
@@ -525,9 +648,12 @@
     <history-entry file="unit_stringTest - 2017.11.02 at 19h 22m 58s.xml">
       <configuration name="unit.stringTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="unit_t - 2017.11.06 at 20h 59m 41s.xml">
+      <configuration name="unit.t" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31549000" />
+    <option name="totallyTimeSpent" value="51176000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,35 +668,35 @@
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22696629" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2764045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33033708" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14860515" sideWeight="0.46566164" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14860515" sideWeight="0.53433836" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15718885" sideWeight="0.4494382" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15718885" sideWeight="0.5505618" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -586,19 +712,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xc/util/SqlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2112">
@@ -613,7 +731,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -623,20 +744,34 @@
           <caret line="185" column="30" lean-forward="false" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#findHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#addNewHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#editHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showCurrentHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#deleteHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showHomeworkDetails#0;class#TeacherService#0" expanded="false" />
-            <marker date="1509776699662" expanded="true" signature="512:1076" ph="SELECT homew... homework" />
-            <marker date="1509776699662" expanded="true" signature="2063:2295" ph="INSERT INTO content" />
-            <marker date="1509776699662" expanded="true" signature="2951:2974" ph="select LAST_... " />
-            <marker date="1509776699662" expanded="true" signature="3519:3598" ph="INSERT INTO scope2" />
-            <marker date="1509776699662" expanded="true" signature="4502:4844" ph="INSERT INTO\... homework" />
-            <marker date="1509776699662" expanded="true" signature="4654:4709" ph="SELECT cours... course" />
-            <marker date="1509776699662" expanded="true" signature="4735:4794" ph="SELECT chapt... chapter" />
-            <marker date="1509776699662" expanded="true" signature="7545:8239" ph="SELECT \nhom... homework" />
-            <marker date="1509776699662" expanded="true" signature="8948:9160" ph="select class... scope2" />
-            <marker date="1509776699662" expanded="true" signature="8948:9161" ph="select class... scope2" />
+            <element signature="method#remarkHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomeworkDetail#0;class#TeacherService#0" expanded="false" />
+            <marker date="1509973551430" expanded="true" signature="543:1107" ph="SELECT homew... homework" />
+            <marker date="1509973551430" expanded="true" signature="2151:2383" ph="INSERT INTO content" />
+            <marker date="1509973551430" expanded="true" signature="2905:2928" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="3366:3445" ph="INSERT INTO scope2" />
+            <marker date="1509973551430" expanded="true" signature="4349:4691" ph="INSERT INTO\... homework" />
+            <marker date="1509973551430" expanded="true" signature="4501:4556" ph="SELECT cours... course" />
+            <marker date="1509973551430" expanded="true" signature="4582:4641" ph="SELECT chapt... chapter" />
+            <marker date="1509973551430" expanded="true" signature="5199:5222" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="5555:5585" ph="select COUNT... student" />
+            <marker date="1509973551430" expanded="true" signature="5911:5943" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="5911:5955" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="7842:7875" ph="DELETE FROM " />
+            <marker date="1509973551430" expanded="true" signature="8434:9128" ph="SELECT \nhom... homework" />
+            <marker date="1509973551430" expanded="true" signature="9837:10049" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="9837:10050" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="10734:10794" ph="UPDATE sbhm " />
+            <marker date="1509973551430" expanded="true" signature="11619:11964" ph="SELECT stude... sbhm" />
+            <marker date="1509973551430" expanded="true" signature="12775:13301" ph="select cours... homework" />
+            <marker date="1509973551430" expanded="true" signature="13919:14000" ph="SELECT sbhm.... sbhm" />
           </folding>
         </state>
       </provider>
@@ -645,7 +780,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#findHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#addNewHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#editHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showCurrentHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#deleteHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showHomeworkDetails#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#remarkHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomeworkDetail#0;class#TeacherServiceDAO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -671,21 +816,20 @@
           <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="method#checkHomework#0;class#View#0" expanded="false" />
+            <element signature="method#updateHomework#0;class#View#0" expanded="false" />
+            <element signature="method#deleteHomework#0;class#View#0" expanded="false" />
             <element signature="method#findHomework#0;class#View#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6120#6121#0" expanded="true" />
+            <element signature="method#showHomework#0;class#View#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/com/xc/util/SqlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2112">
@@ -700,7 +844,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -710,9 +857,15 @@
           <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="method#checkHomework#0;class#View#0" expanded="false" />
+            <element signature="method#updateHomework#0;class#View#0" expanded="false" />
+            <element signature="method#deleteHomework#0;class#View#0" expanded="false" />
             <element signature="method#findHomework#0;class#View#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6120#6121#0" expanded="true" />
+            <element signature="method#showHomework#0;class#View#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -721,7 +874,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#findHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#addNewHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#editHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showCurrentHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#deleteHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showHomeworkDetails#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#remarkHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomeworkDetail#0;class#TeacherServiceDAO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -747,32 +910,39 @@
           <caret line="204" column="22" lean-forward="false" selection-start-line="204" selection-start-column="22" selection-end-line="204" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#findHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#addNewHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#editHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showCurrentHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#deleteHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showHomeworkDetails#0;class#TeacherService#0" expanded="false" />
-            <marker date="1509776699662" expanded="true" signature="512:1076" ph="SELECT homew... homework" />
-            <marker date="1509776699662" expanded="true" signature="2063:2295" ph="INSERT INTO content" />
-            <marker date="1509776699662" expanded="true" signature="2951:2974" ph="select LAST_... " />
-            <marker date="1509776699662" expanded="true" signature="3519:3598" ph="INSERT INTO scope2" />
-            <marker date="1509776699662" expanded="true" signature="4502:4844" ph="INSERT INTO\... homework" />
-            <marker date="1509776699662" expanded="true" signature="4654:4709" ph="SELECT cours... course" />
-            <marker date="1509776699662" expanded="true" signature="4735:4794" ph="SELECT chapt... chapter" />
-            <marker date="1509776699662" expanded="true" signature="7545:8239" ph="SELECT \nhom... homework" />
-            <marker date="1509776699662" expanded="true" signature="8948:9160" ph="select class... scope2" />
-            <marker date="1509776699662" expanded="true" signature="8948:9161" ph="select class... scope2" />
+            <element signature="method#remarkHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomeworkDetail#0;class#TeacherService#0" expanded="false" />
+            <marker date="1509973551430" expanded="true" signature="543:1107" ph="SELECT homew... homework" />
+            <marker date="1509973551430" expanded="true" signature="2151:2383" ph="INSERT INTO content" />
+            <marker date="1509973551430" expanded="true" signature="2905:2928" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="3366:3445" ph="INSERT INTO scope2" />
+            <marker date="1509973551430" expanded="true" signature="4349:4691" ph="INSERT INTO\... homework" />
+            <marker date="1509973551430" expanded="true" signature="4501:4556" ph="SELECT cours... course" />
+            <marker date="1509973551430" expanded="true" signature="4582:4641" ph="SELECT chapt... chapter" />
+            <marker date="1509973551430" expanded="true" signature="5199:5222" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="5555:5585" ph="select COUNT... student" />
+            <marker date="1509973551430" expanded="true" signature="5911:5943" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="5911:5955" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="7842:7875" ph="DELETE FROM " />
+            <marker date="1509973551430" expanded="true" signature="8434:9128" ph="SELECT \nhom... homework" />
+            <marker date="1509973551430" expanded="true" signature="9837:10049" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="9837:10050" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="10734:10794" ph="UPDATE sbhm " />
+            <marker date="1509973551430" expanded="true" signature="11619:11964" ph="SELECT stude... sbhm" />
+            <marker date="1509973551430" expanded="true" signature="12775:13301" ph="select cours... homework" />
+            <marker date="1509973551430" expanded="true" signature="13919:14000" ph="SELECT sbhm.... sbhm" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/com/xc/util/SqlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2112">
@@ -787,7 +957,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -797,20 +970,34 @@
           <caret line="104" column="37" lean-forward="false" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#findHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#addNewHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#editHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showCurrentHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#deleteHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showHomeworkDetails#0;class#TeacherService#0" expanded="false" />
-            <marker date="1509776699662" expanded="true" signature="512:1076" ph="SELECT homew... homework" />
-            <marker date="1509776699662" expanded="true" signature="2063:2295" ph="INSERT INTO content" />
-            <marker date="1509776699662" expanded="true" signature="2951:2974" ph="select LAST_... " />
-            <marker date="1509776699662" expanded="true" signature="3519:3598" ph="INSERT INTO scope2" />
-            <marker date="1509776699662" expanded="true" signature="4502:4844" ph="INSERT INTO\... homework" />
-            <marker date="1509776699662" expanded="true" signature="4654:4709" ph="SELECT cours... course" />
-            <marker date="1509776699662" expanded="true" signature="4735:4794" ph="SELECT chapt... chapter" />
-            <marker date="1509776699662" expanded="true" signature="7545:8239" ph="SELECT \nhom... homework" />
-            <marker date="1509776699662" expanded="true" signature="8948:9160" ph="select class... scope2" />
-            <marker date="1509776699662" expanded="true" signature="8948:9161" ph="select class... scope2" />
+            <element signature="method#remarkHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomeworkDetail#0;class#TeacherService#0" expanded="false" />
+            <marker date="1509973551430" expanded="true" signature="543:1107" ph="SELECT homew... homework" />
+            <marker date="1509973551430" expanded="true" signature="2151:2383" ph="INSERT INTO content" />
+            <marker date="1509973551430" expanded="true" signature="2905:2928" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="3366:3445" ph="INSERT INTO scope2" />
+            <marker date="1509973551430" expanded="true" signature="4349:4691" ph="INSERT INTO\... homework" />
+            <marker date="1509973551430" expanded="true" signature="4501:4556" ph="SELECT cours... course" />
+            <marker date="1509973551430" expanded="true" signature="4582:4641" ph="SELECT chapt... chapter" />
+            <marker date="1509973551430" expanded="true" signature="5199:5222" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="5555:5585" ph="select COUNT... student" />
+            <marker date="1509973551430" expanded="true" signature="5911:5943" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="5911:5955" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="7842:7875" ph="DELETE FROM " />
+            <marker date="1509973551430" expanded="true" signature="8434:9128" ph="SELECT \nhom... homework" />
+            <marker date="1509973551430" expanded="true" signature="9837:10049" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="9837:10050" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="10734:10794" ph="UPDATE sbhm " />
+            <marker date="1509973551430" expanded="true" signature="11619:11964" ph="SELECT stude... sbhm" />
+            <marker date="1509973551430" expanded="true" signature="12775:13301" ph="select cours... homework" />
+            <marker date="1509973551430" expanded="true" signature="13919:14000" ph="SELECT sbhm.... sbhm" />
           </folding>
         </state>
       </provider>
@@ -819,7 +1006,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#findHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#addNewHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#editHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showCurrentHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#deleteHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showHomeworkDetails#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#remarkHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomeworkDetail#0;class#TeacherServiceDAO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -845,21 +1042,20 @@
           <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="method#checkHomework#0;class#View#0" expanded="false" />
+            <element signature="method#updateHomework#0;class#View#0" expanded="false" />
+            <element signature="method#deleteHomework#0;class#View#0" expanded="false" />
             <element signature="method#findHomework#0;class#View#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6120#6121#0" expanded="true" />
+            <element signature="method#showHomework#0;class#View#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/com/xc/util/SqlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2568">
@@ -874,7 +1070,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -884,9 +1083,15 @@
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="method#checkHomework#0;class#View#0" expanded="false" />
+            <element signature="method#updateHomework#0;class#View#0" expanded="false" />
+            <element signature="method#deleteHomework#0;class#View#0" expanded="false" />
             <element signature="method#findHomework#0;class#View#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6120#6121#0" expanded="true" />
+            <element signature="method#showHomework#0;class#View#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -895,7 +1100,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#findHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#addNewHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#editHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showCurrentHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#deleteHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showHomeworkDetails#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#remarkHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomeworkDetail#0;class#TeacherServiceDAO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,32 +1136,39 @@
           <caret line="73" column="37" lean-forward="false" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#findHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#addNewHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#editHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showCurrentHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#deleteHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showHomeworkDetails#0;class#TeacherService#0" expanded="false" />
-            <marker date="1509776699662" expanded="true" signature="512:1076" ph="SELECT homew... homework" />
-            <marker date="1509776699662" expanded="true" signature="2063:2295" ph="INSERT INTO content" />
-            <marker date="1509776699662" expanded="true" signature="2951:2974" ph="select LAST_... " />
-            <marker date="1509776699662" expanded="true" signature="3519:3598" ph="INSERT INTO scope2" />
-            <marker date="1509776699662" expanded="true" signature="4502:4844" ph="INSERT INTO\... homework" />
-            <marker date="1509776699662" expanded="true" signature="4654:4709" ph="SELECT cours... course" />
-            <marker date="1509776699662" expanded="true" signature="4735:4794" ph="SELECT chapt... chapter" />
-            <marker date="1509776699662" expanded="true" signature="7545:8239" ph="SELECT \nhom... homework" />
-            <marker date="1509776699662" expanded="true" signature="8948:9160" ph="select class... scope2" />
-            <marker date="1509776699662" expanded="true" signature="8948:9161" ph="select class... scope2" />
+            <element signature="method#remarkHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomeworkDetail#0;class#TeacherService#0" expanded="false" />
+            <marker date="1509973551430" expanded="true" signature="543:1107" ph="SELECT homew... homework" />
+            <marker date="1509973551430" expanded="true" signature="2151:2383" ph="INSERT INTO content" />
+            <marker date="1509973551430" expanded="true" signature="2905:2928" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="3366:3445" ph="INSERT INTO scope2" />
+            <marker date="1509973551430" expanded="true" signature="4349:4691" ph="INSERT INTO\... homework" />
+            <marker date="1509973551430" expanded="true" signature="4501:4556" ph="SELECT cours... course" />
+            <marker date="1509973551430" expanded="true" signature="4582:4641" ph="SELECT chapt... chapter" />
+            <marker date="1509973551430" expanded="true" signature="5199:5222" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="5555:5585" ph="select COUNT... student" />
+            <marker date="1509973551430" expanded="true" signature="5911:5943" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="5911:5955" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="7842:7875" ph="DELETE FROM " />
+            <marker date="1509973551430" expanded="true" signature="8434:9128" ph="SELECT \nhom... homework" />
+            <marker date="1509973551430" expanded="true" signature="9837:10049" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="9837:10050" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="10734:10794" ph="UPDATE sbhm " />
+            <marker date="1509973551430" expanded="true" signature="11619:11964" ph="SELECT stude... sbhm" />
+            <marker date="1509973551430" expanded="true" signature="12775:13301" ph="select cours... homework" />
+            <marker date="1509973551430" expanded="true" signature="13919:14000" ph="SELECT sbhm.... sbhm" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/com/xc/util/SqlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2640">
@@ -961,7 +1183,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -976,7 +1201,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="44" lean-forward="false" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="docComment;method#findHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#addNewHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#editHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showCurrentHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#deleteHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showHomeworkDetails#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#remarkHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomeworkDetail#0;class#TeacherServiceDAO#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1002,32 +1237,39 @@
           <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#findHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#addNewHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#editHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showCurrentHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#deleteHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showHomeworkDetails#0;class#TeacherService#0" expanded="false" />
-            <marker date="1509776699662" expanded="true" signature="512:1076" ph="SELECT homew... homework" />
-            <marker date="1509776699662" expanded="true" signature="2063:2295" ph="INSERT INTO content" />
-            <marker date="1509776699662" expanded="true" signature="2951:2974" ph="select LAST_... " />
-            <marker date="1509776699662" expanded="true" signature="3519:3598" ph="INSERT INTO scope2" />
-            <marker date="1509776699662" expanded="true" signature="4502:4844" ph="INSERT INTO\... homework" />
-            <marker date="1509776699662" expanded="true" signature="4654:4709" ph="SELECT cours... course" />
-            <marker date="1509776699662" expanded="true" signature="4735:4794" ph="SELECT chapt... chapter" />
-            <marker date="1509776699662" expanded="true" signature="7545:8239" ph="SELECT \nhom... homework" />
-            <marker date="1509776699662" expanded="true" signature="8948:9160" ph="select class... scope2" />
-            <marker date="1509776699662" expanded="true" signature="8948:9161" ph="select class... scope2" />
+            <element signature="method#remarkHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomeworkDetail#0;class#TeacherService#0" expanded="false" />
+            <marker date="1509973551430" expanded="true" signature="543:1107" ph="SELECT homew... homework" />
+            <marker date="1509973551430" expanded="true" signature="2151:2383" ph="INSERT INTO content" />
+            <marker date="1509973551430" expanded="true" signature="2905:2928" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="3366:3445" ph="INSERT INTO scope2" />
+            <marker date="1509973551430" expanded="true" signature="4349:4691" ph="INSERT INTO\... homework" />
+            <marker date="1509973551430" expanded="true" signature="4501:4556" ph="SELECT cours... course" />
+            <marker date="1509973551430" expanded="true" signature="4582:4641" ph="SELECT chapt... chapter" />
+            <marker date="1509973551430" expanded="true" signature="5199:5222" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="5555:5585" ph="select COUNT... student" />
+            <marker date="1509973551430" expanded="true" signature="5911:5943" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="5911:5955" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="7842:7875" ph="DELETE FROM " />
+            <marker date="1509973551430" expanded="true" signature="8434:9128" ph="SELECT \nhom... homework" />
+            <marker date="1509973551430" expanded="true" signature="9837:10049" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="9837:10050" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="10734:10794" ph="UPDATE sbhm " />
+            <marker date="1509973551430" expanded="true" signature="11619:11964" ph="SELECT stude... sbhm" />
+            <marker date="1509973551430" expanded="true" signature="12775:13301" ph="select cours... homework" />
+            <marker date="1509973551430" expanded="true" signature="13919:14000" ph="SELECT sbhm.... sbhm" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/com/xc/bean/showHomework.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -1050,73 +1292,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xc/util/SqlHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xc/Servlet/TeacherServiceServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1944">
-          <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xc/Servlet/TeacherServiceServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xc/util/SqlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="102" column="20" lean-forward="true" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xc/Junit/unit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xc/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#findHomework#0;class#View#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xc/DAO/TeacherServiceDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="240">
+          <caret line="18" column="12" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="docComment;method#findHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#addNewHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#editHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showCurrentHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#deleteHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showHomeworkDetails#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#remarkHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomework#0;class#TeacherServiceDAO#0" expanded="false" />
+            <element signature="docComment;method#showSubmitHomeworkDetail#0;class#TeacherServiceDAO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xc/DAO/StudentServiceDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xc/Service/TeacherService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="121" column="35" lean-forward="false" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
+        <state relative-caret-position="480">
+          <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#findHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#addNewHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#editHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showCurrentHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#deleteHomework#0;class#TeacherService#0" expanded="false" />
             <element signature="method#showHomeworkDetails#0;class#TeacherService#0" expanded="false" />
-            <marker date="1509776699662" expanded="true" signature="512:1076" ph="SELECT homew... homework" />
-            <marker date="1509776699662" expanded="true" signature="2063:2295" ph="INSERT INTO content" />
-            <marker date="1509776699662" expanded="true" signature="2951:2974" ph="select LAST_... " />
-            <marker date="1509776699662" expanded="true" signature="3519:3598" ph="INSERT INTO scope2" />
-            <marker date="1509776699662" expanded="true" signature="4502:4844" ph="INSERT INTO\... homework" />
-            <marker date="1509776699662" expanded="true" signature="4654:4709" ph="SELECT cours... course" />
-            <marker date="1509776699662" expanded="true" signature="4735:4794" ph="SELECT chapt... chapter" />
-            <marker date="1509776699662" expanded="true" signature="7545:8239" ph="SELECT \nhom... homework" />
-            <marker date="1509776699662" expanded="true" signature="8948:9160" ph="select class... scope2" />
-            <marker date="1509776699662" expanded="true" signature="8948:9161" ph="select class... scope2" />
+            <element signature="method#remarkHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomework#0;class#TeacherService#0" expanded="false" />
+            <element signature="method#showSubmitHomeworkDetail#0;class#TeacherService#0" expanded="false" />
+            <marker date="1509973551430" expanded="true" signature="543:1107" ph="SELECT homew... homework" />
+            <marker date="1509973551430" expanded="true" signature="2151:2383" ph="INSERT INTO content" />
+            <marker date="1509973551430" expanded="true" signature="2905:2928" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="3366:3445" ph="INSERT INTO scope2" />
+            <marker date="1509973551430" expanded="true" signature="4349:4691" ph="INSERT INTO\... homework" />
+            <marker date="1509973551430" expanded="true" signature="4501:4556" ph="SELECT cours... course" />
+            <marker date="1509973551430" expanded="true" signature="4582:4641" ph="SELECT chapt... chapter" />
+            <marker date="1509973551430" expanded="true" signature="5199:5222" ph="select LAST_... " />
+            <marker date="1509973551430" expanded="true" signature="5555:5585" ph="select COUNT... student" />
+            <marker date="1509973551430" expanded="true" signature="5911:5943" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="5911:5955" ph="INSERT INTO sbhm... " />
+            <marker date="1509973551430" expanded="true" signature="7842:7875" ph="DELETE FROM " />
+            <marker date="1509973551430" expanded="true" signature="8434:9128" ph="SELECT \nhom... homework" />
+            <marker date="1509973551430" expanded="true" signature="9837:10049" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="9837:10050" ph="select class... scope2" />
+            <marker date="1509973551430" expanded="true" signature="10734:10794" ph="UPDATE sbhm " />
+            <marker date="1509973551430" expanded="true" signature="11619:11964" ph="SELECT stude... sbhm" />
+            <marker date="1509973551430" expanded="true" signature="12775:13301" ph="select cours... homework" />
+            <marker date="1509973551430" expanded="true" signature="13919:14000" ph="SELECT sbhm.... sbhm" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xc/Service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="122" column="13" lean-forward="true" selection-start-line="122" selection-start-column="13" selection-end-line="122" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="method#UnfinishedHomework#0;class#StudentService#0" expanded="false" />
+            <element signature="method#checkHomework#0;class#StudentService#0" expanded="false" />
+            <marker date="1509976700236" expanded="true" signature="507:1525" ph="SELECT\n\tho... homework" />
+            <marker date="1509976700236" expanded="true" signature="2292:3345" ph="SELECT\n\tho... homework" />
+            <marker date="1509976700236" expanded="true" signature="4083:4166" ph="UPDATE sbhm " />
+            <marker date="1509976700236" expanded="true" signature="4083:4167" ph="UPDATE sbhm " />
+            <marker date="1509976700236" expanded="true" signature="4940:5466" ph="select cours... homework" />
+            <marker date="1509976700236" expanded="true" signature="6028:6108" ph="SELECT sbhm.... sbhm" />
+            <marker date="1509976700236" expanded="true" signature="6028:6109" ph="SELECT sbhm.... sbhm" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xc/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="134" column="41" lean-forward="true" selection-start-line="134" selection-start-column="41" selection-end-line="134" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="method#checkHomework#0;class#View#0" expanded="false" />
+            <element signature="method#updateHomework#0;class#View#0" expanded="false" />
+            <element signature="method#deleteHomework#0;class#View#0" expanded="false" />
+            <element signature="method#findHomework#0;class#View#0" expanded="false" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6120#6121#0" expanded="true" />
+            <element signature="method#showHomework#0;class#View#0" expanded="false" />
           </folding>
         </state>
       </provider>
