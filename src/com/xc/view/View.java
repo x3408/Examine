@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class View {
 
     private static Scanner scanner = new Scanner(System.in);
-    private static TeacherServiceDAO ts = new TeacherService();
+    private static TeacherServiceDAO ts;
     private static StudentServiceDAO ss;
 
     public static void main(String[] args) {
@@ -18,6 +18,9 @@ public class View {
     }
 
     private void start() {
+        System.out.println("输入教师id");
+        String teacher_id = scanner.nextLine();
+        ts = new TeacherService(teacher_id);
         while(true) {
             System.out.println("选择功能");
             System.out.println("1.添加作业");

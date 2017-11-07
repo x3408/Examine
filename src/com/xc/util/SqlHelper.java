@@ -93,7 +93,7 @@ public class SqlHelper {
         }
     }
 
-    public static ResultSet executeStringQuery(String sql,String [] parameters) {
+    public static ResultSet executeQuery(String sql,Object [] parameters) {
 
         try {
             conn = instance.getConnection();
@@ -103,7 +103,7 @@ public class SqlHelper {
             } else {
                 ps = conn.prepareStatement(sql);
                 for(int i=0;i<parameters.length;i++) {
-                    ps.setString(i+1, parameters[i]);
+                    ps.setObject(i+1, parameters[i]);
                 }
                 rs = ps.executeQuery();
             }

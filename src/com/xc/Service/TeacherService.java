@@ -12,7 +12,10 @@ import java.util.Scanner;
 
 public class TeacherService implements TeacherServiceDAO {
     private Scanner scanner = new Scanner(System.in);
-
+    private String teacher_id;
+    public TeacherService(String teacher_id) {
+        this.teacher_id = teacher_id;
+    }
 
     @Override
     public ArrayList<String> findHomework(String course, String chapter) {
@@ -126,11 +129,11 @@ public class TeacherService implements TeacherServiceDAO {
 
         sql = "INSERT INTO\n" +
                 "homework\n" +
-                "(course_id,chapter_id,content_id)\n" +
+                "(course_id,chapter_id,content_id,teacher_id)\n" +
                 "VALUES(\n" +
                 "(SELECT course.course_id from course WHERE course_name=?),\n" +
                 "(SELECT chapter.chapter_id from chapter WHERE chapter_name=?),\n" +
-                "?\n" +
+                "?,?\n" +
                 ")";
         data = scanner.nextLine().split("[=]");
 
@@ -140,7 +143,7 @@ public class TeacherService implements TeacherServiceDAO {
             ps.setString(1, data[0]);
             ps.setString(2, data[1]);
             ps.setInt(3, content_id);
-
+            ps.setInt(4, Integer.parseInt(teacher_id));
             int i = ps.executeUpdate();
             if (i == 1) {
                 System.out.println("添加作业成功");
@@ -201,10 +204,10 @@ public class TeacherService implements TeacherServiceDAO {
                 "FROM homework,scope2,content,course,chapter\n" +
                 "where content.content_id=scope2.content_id and homework.content_id=content.content_id AND\n" +
                 "course.course_id=homework.course_id AND\n" +
-                "chapter.chapter_id=homework.chapter_id\n" +
+                "chapter.chapter_id=homework.chapter_id AND homework.teacher_id=?\n" +
                 "GROUP BY\n" +
                 "homework.id\n";
-        ResultSet rs = SqlHelper.executeStringQuery(sql, null);
+        ResultSet rs = SqlHelper.executeQuery(sql, new Object[] {teacher_id});
         try {
             ResultSetMetaData rsmd = rs.getMetaData();
             while (rs.next()) {

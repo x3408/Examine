@@ -18,7 +18,7 @@ public class TeacherServiceServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String [] str = new String[] {"课程名","课程","章节","标题","显示时间提交时间"};
-        TeacherService ts = new TeacherService();
+        TeacherService ts = new TeacherService("1");
         ArrayList<String> arr = ts.showCurrentHomework();
         for (int i = 0; i < 5; i++) {
             request.getSession(false). setAttribute(str[i], arr.get(i));

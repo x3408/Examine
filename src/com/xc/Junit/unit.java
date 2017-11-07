@@ -17,10 +17,10 @@ public class unit {
         System.out.println(arr);
     }
 
-    @Test
-    public void t() {
-        new TeacherService().addNewHomework();
-    }
+//    @Test
+//    public void t() {
+//        new TeacherService().addNewHomework();
+//    }
     @Test
     public void stringTest() {
         Scanner scanner = new Scanner(System.in);
